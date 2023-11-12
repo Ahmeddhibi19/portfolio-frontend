@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url("assets/bg9.gif");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.portfolio-card {
+    background-color: rgba(128, 128, 128, 0.173);
+}
+
+
+.gradient-text {
+    background: linear-gradient(white ,rgb(255, 0, 0));
+    background-clip:text ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.progress-bar::-webkit-progress-bar{
+    border-radius: 15px;
+    border: 1px solid gray;
+    background-color: transparent;
+}
+.progress-bar::-webkit-progress-value {
+    border-radius: 15px;
+    background: linear-gradient(to right, violet, yellow);
+}
+
+.scroll-bar::-webkit-scrollbar {
+    width: 5px;
+    background-color: transparent;
+}
+.scroll-bar::-webkit-scrollbar-thumb {
+    background-color:rgba(134,78,173) ;
+    border-radius: 20px;
+}
+
+.scroll-hide::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+
+
+#video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+
+.gradient-text2{
+    background: linear-gradient(rgb(1, 255, 242) ,rgb(255, 251, 0));
+    background-clip:text ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.bckg {
+    background-color: rgba(170, 0, 85, 0.651);
+}
