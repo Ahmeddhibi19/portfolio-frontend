@@ -25,6 +25,16 @@ const ContactSection = () => {
             },
             body: JSON.stringify(formData),
           });
+          if (!response.ok) {
+            console.error(`Error: ${response.status} - ${response.statusText}`);
+            return;
+          }
+      
+          const responseText = await response.text();
+          console.log(responseText);
+      
+          // Now try to parse JSON
+         
           
        
       
