@@ -18,7 +18,7 @@ const ContactSection = () => {
     e.preventDefault();
 
     try {
-        const response = await fetch('https://ahmeddhibicv.onrender.com/submit', {
+        const response = await fetch('https://ahmeddhibicv-api.onrender.com/api/submit', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
